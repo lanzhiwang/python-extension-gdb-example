@@ -11,4 +11,6 @@ RUN apt-get update && apt-get install -y \
 
 RUN pip3 install ipython
 
+COPY ./gdb/.gdbinit /root/.gdbinit
+
 WORKDIR /root/home
